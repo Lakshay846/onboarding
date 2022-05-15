@@ -39,8 +39,31 @@ export const Wrapper = styled.div`
 
     @media only screen and (max-width: 600px) {
         .stepone {
-            margin: 1em auto;
-            width: 70%;
+            width: 80%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .stepone {
+            width: 47%;
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .stepone {
+            width: 24%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .stepone {
+            width: 35%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .stepone {
+            width: 25%;
         }
     }
 

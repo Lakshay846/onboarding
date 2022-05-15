@@ -5,7 +5,22 @@ export const Wrapper = styled.div`
 
     .submit {
         margin-top: 2em;
-        width: 23%;
+
+        @media screen and (max-width: 600px) {
+            width: 85%;
+        }
+
+        @media only screen and (min-width: 768px) {
+            width: 55%;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            width: 40%;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            width: 23%;
+        }
     }
 
 `;

@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
     text-align: center;
 
     .steptwo {
-        width: 25%;
         margin: 2em auto;
     }
 
@@ -43,12 +42,36 @@ export const Wrapper = styled.div`
     #url-input {
         border-left: none;
         border-radius: 0 5px 5px 0;
+        padding-left: 9.2em;
     }
 
-    @media screen and (max-width: 427px) {
+    @media screen and (max-width: 600px) {
         .steptwo {
-            margin: 1em auto;
             width: 80%;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .steptwo {
+            width: 47%;
+        }
+    }
+
+    @media only screen and (min-width: 992px) {
+        .steptwo {
+            width: 24%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .steptwo {
+            width: 35%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .steptwo {
+            width: 23%;
         }
     }
 

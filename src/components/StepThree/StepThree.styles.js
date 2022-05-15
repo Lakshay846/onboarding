@@ -47,12 +47,30 @@ export const Content = styled.div`
     grid-template-areas:
             'leftDiv rightDiv'
             'submitBtn submitBtn';
-    grid-template-columns: 37% 37%;
     column-gap: 2em;
     row-gap: 1em;
     margin: 2em auto;
-    padding-left: 5em;
-    width: 32%;
+    justify-content: center;
+
+    @media screen and (max-width: 600px) {
+        grid-template-areas:
+            'leftDiv rightDiv'
+            'submitBtn submitBtn';
+        grid-template-columns: 8em 8em;
+        column-gap: 0.5em;
+        row-gap: 1em;
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 768px) {
+            grid-template-columns: 8em 8em;
+            width: 65%;
+    }
+
+    @media only screen and (min-width: 1200px) {
+            grid-template-columns: 32% 32%;
+            width: 33%;
+    }
 `;
 
 export const Icon = styled.img`
